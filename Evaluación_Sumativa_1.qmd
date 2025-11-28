@@ -4,28 +4,23 @@ author: "Nicolás Marchant"
 format:
   html:
     css: styles.css
-
 header-includes: |
   <style>
-    /* Justificar texto del cuerpo */
     body {
       text-align: justify;
       text-justify: inter-word;
       hyphens: auto;
     }
-    /* Evitar justificar títulos y código */
     h1, h2, h3, h4, h5, h6, pre, code {
       text-align: left;
     }
   </style>
-editor: visual
-lang: es
 ---
 
 ## Instrucciones para reproducir este informe
 
 1.  Instalar R (versión igual o superior a 4.3).
-2.  IInstalar los siguientes paquetes si no están presentes. Para hacerlo, se debe crear un nuevo chunk en el documento (Ctrl + Alt + I) y copiar el siguiente código dentro de él: `install.packages(c("tidyverse", "ggplot2", "skimr", "haven", "rio"))`
+2.  Instalar los siguientes paquetes si no están presentes. Para hacerlo, se debe crear un nuevo chunk en el documento (Ctrl + Alt + I) y copiar el siguiente código dentro de él: `install.packages(c("tidyverse", "ggplot2", "skimr", "haven", "rio"))`
 
 ***IMPORTANTE:*** Para hacer reproducible este informe, se debe colocar `enpg2022.rds` en una carpeta llamada "Evaluación 1/" dentro del mismo proyecto.
 
@@ -67,7 +62,7 @@ Usar libreria rio para importar y abrir la carpeta guardada de la encuesta SENDA
 enpg2022 <- import("Evaluación 1/enpg2022.RDS")
 ```
 
-Es por ello que ahora teniendo en consideración se tendran seleccionado las siguientes variables:
+A partir de esto, se seleccionaron las siguientes variables para el análisis:
 
 -   oh_1 (¿Ha tomado Ud. alcohol alguna vez en su vida? *Variable principal* )
 
